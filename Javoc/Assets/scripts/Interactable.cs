@@ -13,6 +13,20 @@ public class Interactable : MonoBehaviour {
     }
 
     [SerializeField] UnityEvent eventos;
+    [SerializeField] float maxDistance;
+
+    // Remueve todas las referencias perdidas del array.
+    public static void Depurar() {
+        Interactable[] todos = _interactables.ToArray();
+        _interactables.Clear();
+        foreach (Interactable i in todos) {
+            if (i != null) _interactables.Add(i);
+        }
+    }
+
+    public bool CloseEnough(float d) {
+        return maxDistance > d;
+    }
 
     public void Awake() {
         Interactables.Add(this);
@@ -20,5 +34,10 @@ public class Interactable : MonoBehaviour {
 
     public void Interact() {
         if (eventos != null) eventos.Invoke();
+    }
+
+    private void OnDrawGizmosSelected() {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, maxDistance);
     }
 }
