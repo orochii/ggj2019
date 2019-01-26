@@ -7,6 +7,7 @@ Javoc/[Oo]bj/
 Javoc/[Bb]uild/
 Javoc/[Bb]uilds/
 Javoc/[Ll]ogs/
+Javoc/[Pp]ackages/
 
 # Never ignore Asset meta data
 ![Aa]ssets/**/*.meta
