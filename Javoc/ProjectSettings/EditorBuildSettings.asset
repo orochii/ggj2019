@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_scenes/titulo.unity
+    guid: 4cfbfd581b125e1439b8f2b15c52d7fe
+  - enabled: 1
     path: Assets/_scenes/pasillo.unity
     guid: 7a6ae3970f4cd634d96a3bd7899806fd
   - enabled: 1
