@@ -13,6 +13,8 @@ public class StateCheck : MonoBehaviour
     [SerializeField] UnityEvent interactionTrue;
     [SerializeField] UnityEvent interactionFalse;
 
+    [SerializeField] UnityEvent onCheckEnd;
+
     private void Awake() {
         bool flag = GameManager.Instance.GetFlag(awakeFlag);
         if (flag) {
@@ -36,5 +38,14 @@ public class StateCheck : MonoBehaviour
     }
     public void UnsetFlag(int i) {
         GameManager.Instance.SetFlag(i, false);
+    }
+    public void CheckEnd() {
+        bool flag0 = GameManager.Instance.GetFlag(0);
+        bool flag1 = GameManager.Instance.GetFlag(1);
+        bool flag2 = GameManager.Instance.GetFlag(2);
+        if (flag0 && flag1 && flag2) {
+            GameManager.Instance.SetFlag(-1, true); // -1 es que pasó el juego.
+        }
+        if (onCheckEnd != null) onCheckEnd.Invoke();
     }
 }
