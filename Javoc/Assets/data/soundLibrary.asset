@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698713e68a7b8654cb928a2e22ca1d6f, type: 3}
   m_Name: soundLibrary
   m_EditorClassIdentifier: 
-  entries: []
+  entries:
+  - name: m_inicio
+    clips:
+    - {fileID: 8300000, guid: 305d23dca42e67345a634ee6bb4b27c2, type: 3}
+  - name: m_sala
+    clips:
+    - {fileID: 8300000, guid: 445b9b4bbd53c1e4a96ad926b14f1980, type: 3}
