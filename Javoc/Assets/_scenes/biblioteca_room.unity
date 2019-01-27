@@ -5951,6 +5951,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  checkIfEnd: 0
   onCheckEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -6297,6 +6298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: targetSceneName
       value: sala_room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530428830112414849, guid: 7d84c497530df8a43bc0b78e3f280cfc,
+        type: 3}
+      propertyPath: nextDoorId
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4610916923827360290, guid: 7d84c497530df8a43bc0b78e3f280cfc, type: 3}
@@ -7093,6 +7099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1221620753}
+  - component: {fileID: 1221620754}
   m_Layer: 0
   m_Name: Escenario
   m_TagString: Untagged
@@ -7135,6 +7142,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1221620754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221620752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad76f76cc0837044a69ecb519a438c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songName: m_biblioteca
 --- !u!1 &1268451355
 GameObject:
   m_ObjectHideFlags: 0

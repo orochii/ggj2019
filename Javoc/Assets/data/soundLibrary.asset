@@ -19,3 +19,12 @@ MonoBehaviour:
   - name: m_sala
     clips:
     - {fileID: 8300000, guid: 445b9b4bbd53c1e4a96ad926b14f1980, type: 3}
+  - name: m_cocina
+    clips:
+    - {fileID: 8300000, guid: 311def2cf9cabd046ad793209ee20ef2, type: 3}
+  - name: m_biblioteca
+    clips:
+    - {fileID: 8300000, guid: 820405bf68f32c0438df54fc86fbb6e5, type: 3}
+  - name: m_cuarto
+    clips:
+    - {fileID: 8300000, guid: 67da9affe85bf6f44bea45ad3257a29a, type: 3}
