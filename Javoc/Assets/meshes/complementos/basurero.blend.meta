@@ -1,12 +1,14 @@
 fileFormatVersion: 2
-guid: 0e735f777c7dced45b0399cadc5c4012
+guid: 0bc0aaf3aaabe6042853d126dd4e1401
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: cuadro2_c
-    2100002: cuadro2_c6
+    2100000: Basurero_shade
+    2100002: Basurero_body
+    2100004: Basurero_tapa
+    2100006: Basura
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube
