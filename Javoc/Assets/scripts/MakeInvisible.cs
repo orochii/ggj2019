@@ -21,6 +21,7 @@ public class MakeInvisible : MonoBehaviour
     // Tag a buscar en objetos encontrados al hacer raycasting.
     [SerializeField] string tagName = "Esconder";
     [SerializeField] float checkTime = 0.1f;
+    [SerializeField] float transparencia = 0.25f;
     private Transform _jugador;
     List<ObjetoEscondidoData> objetosEscondidos;
 
@@ -53,8 +54,10 @@ public class MakeInvisible : MonoBehaviour
     void EscondeObjeto(Transform t) {
         ObjetoEscondidoData objData = null;
         foreach (ObjetoEscondidoData o in objetosEscondidos) {
-            if (o.obj == t) objData = o;
-            break;
+            if (o.obj.GetInstanceID() == t.GetInstanceID()) {
+                objData = o;
+                break;
+            }
         }
         if (objData == null) {
             Material m = null;
@@ -70,17 +73,15 @@ public class MakeInvisible : MonoBehaviour
         }
         //
         if (objData.mat != null) {
-            Debug.Log("Desaparece.");
             StandardShaderUtils.ChangeRenderMode(objData.mat, StandardShaderUtils.BlendMode.Transparent);
             Color c = objData.mat.color;
-            c.a = 0.5f;
+            c.a = transparencia;
             objData.mat.color = c;
         }
     }
-
+    
     void AparecerObjeto(ObjetoEscondidoData objData) {
         if (objData.mat != null) {
-            Debug.Log("Reaparece.");
             StandardShaderUtils.ChangeRenderMode(objData.mat, StandardShaderUtils.BlendMode.Opaque);
             Color c = objData.mat.color;
             c.a = 1f;

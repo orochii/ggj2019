@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_scenes/pasillo.unity
+    guid: 7a6ae3970f4cd634d96a3bd7899806fd
+  - enabled: 1
+    path: Assets/_scenes/sala_room.unity
+    guid: 45f06b0249c75fe43a9a814cdd3a8449
+  - enabled: 1
     path: Assets/_scenes/main_room.unity
     guid: 4156450cc1e32f84a98840080e784f3c
   - enabled: 1
     path: Assets/_scenes/kitchen_room.unity
     guid: 04f47074be1ce284fa5ead9f8b6e5003
+  - enabled: 1
+    path: Assets/_scenes/biblioteca_room.unity
+    guid: 22512ca2ff026f149bd07020b8212bd6
   m_configObjects: {}

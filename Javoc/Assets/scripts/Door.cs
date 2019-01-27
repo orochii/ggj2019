@@ -40,4 +40,9 @@ public class Door : MonoBehaviour
         NextDoorId = nextDoorId;
         SceneManager.LoadScene(targetSceneName);
     }
+    
+    public void Set(string _sceneName, int _nextDoor) {
+        targetSceneName = _sceneName;
+        nextDoorId = _nextDoor;
+    }
 }

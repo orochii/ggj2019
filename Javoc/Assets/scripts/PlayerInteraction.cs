@@ -13,23 +13,25 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Awake() {
         cameraMain = Camera.main;
+        interactIcon.gameObject.SetActive(false);
     }
 
     void Update() {
-        Interactable currentInteractable = GetClosest();
-        UpdateIconShow(currentInteractable != null);
+        _currentInteractable = GetClosest();
+        UpdateIconShow(_currentInteractable != null);
         bool interact = Input.GetButtonDown("Jump");
         if (interact) {
-            if (currentInteractable != null) {
-                currentInteractable.Interact();
+            if (_currentInteractable != null) {
+                _currentInteractable.Interact();
             }
         }
     }
 
     private void UpdateIconShow(bool v) {
-        Debug.Log(v);
-        Vector3 playerPositionScreen = cameraMain.WorldToScreenPoint(transform.position);
-        interactIcon.position = playerPositionScreen;
+        if (v) {
+            Vector3 iconPositionScreen = cameraMain.WorldToScreenPoint(_currentInteractable.transform.position);
+            interactIcon.position = iconPositionScreen;
+        }
         if (_showingIcon == v) return;
         interactIcon.gameObject.SetActive(v);
         _showingIcon = v;
