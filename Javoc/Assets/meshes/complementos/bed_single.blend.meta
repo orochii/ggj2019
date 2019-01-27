@@ -4,14 +4,28 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: bed
+    100004: Cylinder
     400000: //RootNode
+    400002: bed
+    400004: Cylinder
     2100000: Material_002
     2100002: Material_003
     2100004: Material_005
     2100006: Material_001
+    2100008: pillow
+    2100010: wood
+    2100012: sheets
+    2100014: table
     2300000: //RootNode
+    2300002: bed
+    2300004: Cylinder
     3300000: //RootNode
+    3300002: bed
+    3300004: Cylinder
     4300000: Cube
+    4300002: Cylinder
+    4300004: bed
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

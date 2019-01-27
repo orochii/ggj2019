@@ -10,6 +10,8 @@ ModelImporter:
     400002: //RootNode
     400004: main_room
     2100000: unnamed
+    2100002: walls
+    2100004: floor
     2300000: door_wall
     2300002: main_room
     3300000: door_wall

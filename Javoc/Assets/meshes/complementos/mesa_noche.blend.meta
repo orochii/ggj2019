@@ -7,6 +7,8 @@ ModelImporter:
     400000: //RootNode
     2100000: mesaN_col
     2100002: mesaN_shade
+    2100004: table
+    2100006: handle
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube
