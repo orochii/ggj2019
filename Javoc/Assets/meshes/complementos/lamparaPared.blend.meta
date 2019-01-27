@@ -15,6 +15,9 @@ ModelImporter:
     400008: Sphere
     2100000: Material_002
     2100002: Material_001
+    2100004: lamp_cover
+    2100006: bulb
+    2100008: silver
     2300000: Cube
     2300002: Cylinder
     2300004: Cylinder_001
