@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-guid: d3077f3fef511c244ad5c77de44c5f1a
+guid: a69ca6fa6ab41a842ad284c41beeff7d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: mesaN_col
-    2100002: mesaN_shade
-    2100004: table
-    2100006: handle
+    2100000: Material
+    2100002: Material_001
+    2100004: Material_002
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube

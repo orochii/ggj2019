@@ -1,17 +1,15 @@
 fileFormatVersion: 2
-guid: d3077f3fef511c244ad5c77de44c5f1a
+guid: 7e7b6703665e27c49b65fce02f6f045b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: mesaN_col
-    2100002: mesaN_shade
-    2100004: table
-    2100006: handle
+    2100000: Alfombra_centro
+    2100002: Alfombra_detalles
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
+    4300000: Plane
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
