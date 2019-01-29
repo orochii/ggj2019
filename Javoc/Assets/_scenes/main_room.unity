@@ -645,6 +645,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Esconder
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 13d4d1c92dc0e2c4dbdb189919044c41, type: 3}
+      propertyPath: m_TagString
+      value: Esconder
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 13d4d1c92dc0e2c4dbdb189919044c41, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.087402344
@@ -688,10 +692,6 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 13d4d1c92dc0e2c4dbdb189919044c41, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100006, guid: 13d4d1c92dc0e2c4dbdb189919044c41, type: 3}
-      propertyPath: m_TagString
-      value: Esconder
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 13d4d1c92dc0e2c4dbdb189919044c41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1072,10 +1072,6 @@ PrefabInstance:
     - target: {fileID: 1645022042511440177, guid: 8b83caf13ea82bf458baacaad440dc60,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1015378773, guid: 8b83caf13ea82bf458baacaad440dc60, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

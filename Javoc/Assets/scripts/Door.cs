@@ -18,6 +18,7 @@ public class Door : MonoBehaviour
         return null;
     }
     public static void LocateNextDoor(Transform player) {
+        Debug.Log(NextDoorId);
         Vector3 position = Vector3.zero;
         Quaternion rotation = Quaternion.identity;
         Door door = GetDoorById(NextDoorId);
