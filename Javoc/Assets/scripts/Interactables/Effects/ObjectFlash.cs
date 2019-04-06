@@ -9,10 +9,19 @@ public class ObjectFlash : MonoBehaviour
     [SerializeField] int repeat;
     [SerializeField] Color color;
     
-    public void Colorize() {
-        obj.Colorize(color);
+    public void Colorize(string colStr) {
+        Color c = GetColorFromString(colStr);
+        obj.Colorize(c);
     }
-    public void Flash() {
-        obj.Pulsate(color, time, repeat);
+    public void Flash(string colStr) {
+        Color c = GetColorFromString(colStr);
+        obj.Pulsate(c, time, repeat);
+    }
+
+    public Color GetColorFromString(string colStr) {
+        Color _c;
+        bool s = ColorUtility.TryParseHtmlString(colStr, out _c);
+        if (!s) _c = color;
+        return _c;
     }
 }

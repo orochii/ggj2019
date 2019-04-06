@@ -25,6 +25,7 @@ public class Interactable : MonoBehaviour {
     }
 
     public bool CloseEnough(float d) {
+        if (!gameObject.activeInHierarchy) return false;
         return maxDistance > d;
     }
 

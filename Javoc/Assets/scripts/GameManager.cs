@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [System.Serializable]
     public class GameState {
         public bool[] obtainedGoals = new bool[50];
         public bool finished = false;
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
             if (_Instance == null) {
                 _Instance = FindObjectOfType<GameManager>();
                 if (_Instance == null) {
-                    GameObject go = new GameObject();
+                    GameObject go = new GameObject("GameManager");
                     _Instance = go.AddComponent<GameManager>();
                 }
             }
