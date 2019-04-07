@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour
         }
     }
     [SerializeField] GameState state;
+    public bool PlayerCanMove = true;
+    public bool PlayerCanInteract = true;
     
     private void Awake() {
         if (state != null) state.Restart();
@@ -43,6 +45,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        PlayerCanMove = true;
+        PlayerCanInteract = true;
         _Instance = this;
         state = new GameState();
         DontDestroyOnLoad(gameObject);

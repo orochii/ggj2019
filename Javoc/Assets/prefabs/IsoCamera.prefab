@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 530238849854244138}
   - component: {fileID: 530238849854244133}
+  - component: {fileID: 1032772461}
+  - component: {fileID: 5585873465652335513}
   m_Layer: 0
   m_Name: IsoCamera
   m_TagString: Untagged
@@ -51,6 +53,33 @@ MonoBehaviour:
   maxXAndZ: {x: 100, y: 100}
   minXAndZ: {x: -100, y: -100}
   offsetZ: 0
+--- !u!114 &1032772461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530238849854244132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b633be44b938348ae8240c9af71385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 530238850818436047}
+  pivot: {fileID: 190168298476384684}
+  effectTime: 0.2
+--- !u!114 &5585873465652335513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530238849854244132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b2448354dfc3948b86c3c1c657717a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &530238850818436040
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,6 +91,7 @@ GameObject:
   - component: {fileID: 530238850818436041}
   - component: {fileID: 530238850818436047}
   - component: {fileID: 530238850818436046}
+  - component: {fileID: 168329451}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -109,7 +139,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -133,6 +163,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530238850818436040}
   m_Enabled: 1
+--- !u!114 &168329451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530238850818436040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2d968b9685329489833aee7c38187b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: Esconder
+  checkTime: 0.1
+  transparencia: 0.25
 --- !u!1 &5300797786321400554
 GameObject:
   m_ObjectHideFlags: 0

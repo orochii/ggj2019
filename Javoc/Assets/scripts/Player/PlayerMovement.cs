@@ -31,7 +31,8 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-        Movimiento();
+        if (GameManager.Instance.PlayerCanMove) Movimiento();
+        else controladorPersonaje.SimpleMove(Vector3.zero);
         Animacion();
     }
 
