@@ -19,7 +19,7 @@ public class PlayerInteraction : MonoBehaviour
     void Update() {
         _currentInteractable = GetClosest();
         UpdateIconShow(_currentInteractable != null && GameManager.Instance.PlayerCanInteract);
-        bool interact = Input.GetButtonDown("Jump");
+        bool interact = Input.GetButtonUp("Jump");
         if (interact && GameManager.Instance.PlayerCanInteract) {
             if (_currentInteractable != null) {
                 _currentInteractable.Interact();

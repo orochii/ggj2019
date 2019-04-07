@@ -9,6 +9,11 @@ public class GameControl : MonoBehaviour
     }
 
     public void SetCanInteract(bool v) {
+        StartCoroutine(SetCanInteractNextFrame(v));
+    }
+
+    public IEnumerator SetCanInteractNextFrame(bool v) {
+        yield return null;
         GameManager.Instance.PlayerCanInteract = v;
     }
 }

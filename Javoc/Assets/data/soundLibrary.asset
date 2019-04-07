@@ -28,3 +28,12 @@ MonoBehaviour:
   - name: m_cuarto
     clips:
     - {fileID: 8300000, guid: 67da9affe85bf6f44bea45ad3257a29a, type: 3}
+  - name: s_puzzleComplete
+    clips:
+    - {fileID: 8300000, guid: 342f1741cc12c0646a61e0930b7d7d28, type: 3}
+  - name: s_puzzleFail
+    clips:
+    - {fileID: 0}
+  - name: s_puzzleRight
+    clips:
+    - {fileID: 8300000, guid: ed2439bc14ec8b9458b7ae2272b6c6f3, type: 3}
