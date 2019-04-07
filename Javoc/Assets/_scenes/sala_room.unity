@@ -650,7 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorId: 3
   targetSceneName: pasillo
-  nextDoorId: 0
+  nextDoorId: -1
 --- !u!114 &698361316
 MonoBehaviour:
   m_ObjectHideFlags: 0

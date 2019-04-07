@@ -49,11 +49,11 @@ public class GameManager : MonoBehaviour
     }
 
     public bool GetFlag(int i) {
-        if (i == -1) return state.finished;
+        if (i < 0) return state.finished;
         return state.Get(i);
     }
     public void SetFlag(int i, bool v) {
-        if (i == -1) state.finished = v;
-        state.Set(i, v);
+        if (i < 0) state.finished = v;
+        else state.Set(i, v);
     }
 }
